@@ -4,7 +4,7 @@ import { Quote } from 'lucide-react';
 
 export default function FoundersNote() {
   return (
-    <section className="py-24 bg-credsy-beige">
+    <section className="py-24 bg-credsy-beige overflow-hidden">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="relative inline-block">
             <Quote className="w-12 h-12 text-credsy-gold/20 absolute -top-6 -left-8" />

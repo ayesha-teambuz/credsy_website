@@ -51,7 +51,7 @@ export default function HustleSection() {
           </div>
 
           {/* Visual Content - Abstract Comparison Graphic */}
-          <div className="lg:w-1/2 w-full relative">
+          <div className="lg:w-1/2 w-full relative mt-12 lg:mt-0">
             <div className="relative aspect-square max-w-md mx-auto">
                {/* Background Elements */}
                <div className="absolute inset-0 bg-slate-100 rounded-full scale-90"></div>

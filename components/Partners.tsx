@@ -21,11 +21,11 @@ export default function Partners() {
           <h2 className="font-serif text-3xl font-bold text-credsy-navy">Our Lending Partners</h2>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {partners.map((partner, index) => (
             <div
               key={index}
-              className="group h-24 relative border border-slate-200 rounded-xl bg-white hover:shadow-xl hover:border-credsy-gold/30 hover:scale-[1.02] transition-all duration-300 overflow-hidden"
+              className="group h-16 relative border border-slate-200 rounded-xl bg-white hover:shadow-xl hover:border-credsy-gold/30 hover:scale-[1.02] transition-all duration-300 overflow-hidden"
             >
               <div className="absolute inset-0 grayscale group-hover:grayscale-0 transition-all duration-300 opacity-80 group-hover:opacity-100">
                 <Image

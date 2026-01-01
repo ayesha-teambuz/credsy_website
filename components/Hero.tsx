@@ -86,7 +86,7 @@ export default function Hero() {
             <span className="tracking-wide">Trusted by 1,000+ Indians</span>
           </motion.div>
           
-          <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-[1.1] tracking-tight">
+          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] tracking-tight">
             Banks Work <br />
             <span className="text-white/40">For Themselves.</span> <br />
             <span className="relative inline-block mt-2">
@@ -97,31 +97,32 @@ export default function Hero() {
             </span>
           </h1>
           
-          <p className="text-lg text-slate-400 max-w-lg leading-relaxed font-light">
+          <p className="text-base sm:text-lg text-slate-400 max-w-lg leading-relaxed font-light">
             Stop hunting for offers. We compare 40+ lenders to ensure better rates, faster approvals, and smarter choices—always in your best interest.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-5 pt-4">
-             {/* Magnetic Button Wrapper */}
-            <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
+          <div className="flex flex-col sm:flex-row gap-4 pt-4 w-full sm:w-auto">
+             {/* Primary CTA Button */}
+            <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} className="w-full sm:w-auto">
                 <Button 
                     size="lg" 
                     onClick={openModal}
-                    className="h-14 px-8 rounded-full text-base whitespace-nowrap shadow-[0_0_30px_-10px_rgba(245,158,11,0.5)] border-t border-white/20 relative overflow-hidden group"
+                    className="w-full sm:w-auto h-12 sm:h-14 px-6 sm:px-8 rounded-full text-sm sm:text-base whitespace-nowrap shadow-[0_0_30px_-10px_rgba(245,158,11,0.5)] border-t border-white/20 relative overflow-hidden group"
                 >
-                    <span className="relative z-10 flex items-center">
+                    <span className="relative z-10 flex items-center justify-center">
                         Check Eligibility
-                        <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                        <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
                     </span>
                     <div className="absolute inset-0 bg-gradient-to-r from-credsy-gold to-yellow-500 opacity-100 group-hover:opacity-90 transition-opacity" />
                     <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 blur-md" />
                 </Button>
             </motion.div>
 
+            {/* Secondary CTA Button */}
             <Button 
               variant="outline" 
               size="lg" 
-              className="h-14 px-8 rounded-full border-white/10 text-white hover:bg-white/5 hover:border-white/20 backdrop-blur-sm transition-all whitespace-nowrap"
+              className="w-full sm:w-auto h-12 sm:h-14 px-6 sm:px-8 rounded-full border-white/10 text-white hover:bg-white/5 hover:border-white/20 backdrop-blur-sm transition-all whitespace-nowrap text-sm sm:text-base"
               onClick={() => document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Explore Products
@@ -141,8 +142,8 @@ export default function Hero() {
           </div>
         </motion.div>
 
-        {/* 3D Visual Content */}
-        <div className="relative h-[600px] flex items-center justify-center lg:translate-x-12 perspective-1000">
+        {/* 3D Visual Content - Desktop Only */}
+        <div className="relative h-[600px] hidden lg:flex items-center justify-center lg:translate-x-12 perspective-1000">
              
              {/* Independent Floating Badge 1 */}
              <motion.div 

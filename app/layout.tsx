@@ -3,6 +3,8 @@ import { Playfair_Display, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { ModalProvider } from "@/context/ModalContext";
 import ApplyModal from "@/components/ApplyModal";
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -73,6 +75,8 @@ export default function RootLayout({
         <ModalProvider>
           {children}
           <ApplyModal />
+          <Analytics />
+          <SpeedInsights />
         </ModalProvider>
       </body>
     </html>

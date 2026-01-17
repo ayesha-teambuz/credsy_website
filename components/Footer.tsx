@@ -90,11 +90,16 @@ export default function Footer() {
                   Contact@credsyfinance.com
                 </a>
               </li>
-              <li className="flex items-center gap-3 text-slate-400">
-                <Phone className="w-5 h-5 text-credsy-gold shrink-0" />
-                <a href="tel:9217701439" className="hover:text-white transition-colors">
-                  +91 92177 01439
-                </a>
+              <li className="flex items-start gap-3 text-slate-400">
+                <Phone className="w-5 h-5 text-credsy-gold shrink-0 mt-1" />
+                <div className="flex flex-col gap-1">
+                  <a href="tel:9217701439" className="hover:text-white transition-colors">
+                    +91 92177 01439
+                  </a>
+                  <a href="tel:8287041439" className="hover:text-white transition-colors">
+                    +91 82870 41439
+                  </a>
+                </div>
               </li>
             </ul>
           </div>

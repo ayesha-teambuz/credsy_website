@@ -58,17 +58,8 @@ export default function Footer() {
             <p className="text-slate-400 leading-relaxed">
               We compare multiple lenders to ensure better rates, faster approvals, and smarter choices—always in your best interest.
             </p>
-            <div className="flex gap-4">
-              <a
-                href="https://instagram.com/Credsyfinance"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-credsy-gold hover:text-white transition-all duration-300"
-              >
-                <Instagram size={20} />
-              </a>
-              {/* Add more social icons if needed */}
-            </div>
+            {/* Social links removed as per request */}
+
           </div>
 
           {/* Quick Links */}
@@ -101,8 +92,8 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3 text-slate-400">
                 <Phone className="w-5 h-5 text-credsy-gold shrink-0" />
-                <a href="tel:8287041439" className="hover:text-white transition-colors">
-                  +91 82870 41439
+                <a href="tel:9217701439" className="hover:text-white transition-colors">
+                  +91 92177 01439
                 </a>
               </li>
             </ul>
